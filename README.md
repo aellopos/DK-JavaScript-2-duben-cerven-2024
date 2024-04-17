@@ -1,4 +1,4 @@
-# JavaScript 1 - základy
+# JavaScript 2
 
 ## Odevzdávání úkolů
 
