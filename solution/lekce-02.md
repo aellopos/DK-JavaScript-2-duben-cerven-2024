@@ -1,6 +1,6 @@
 ## Pánské obleky
 
-V tomto příkladu si vyzkoušíme týmovou spolupráci v Gitu. Vaším úkolem bude vytvořit webovou stránku pro e-shop s pánskými obleky. Stránka má vypadat přesně dle tohoto [grafického návrhu](assets/layout.png).
+V tomto příkladu si vyzkoušíme týmovou spolupráci v Gitu. Vaším úkolem bude vytvořit webovou stránku pro e-shop s pánskými obleky. Stránka má vypadat přesně dle tohoto [grafického návrhu](../images/layout.png).
 
 Pro účely všech následujících cvičení budeme pracovat ve dvoučlenných týmech. Jeden z týmu hraje roli Alice a druhý roli Barbory. Instrukce jsou vždy pro Alici nebo Barboru. Držte si kloubouky, začínáme:
 
@@ -22,7 +22,7 @@ Na konci tohoto úkolu mají Alice i Barbora každá na svém počítači naklon
 
 Úkol pro **Barboru**. Alice čeká.
 
-1. Barbora vytvoří v projektu složku `img` a do ní vloží obrázky [bg.jpg](assets/bg.jpg) a [suit.jpg](assets/suit.jpg) pro hlavičku stránky.
+1. Barbora vytvoří v projektu složku `img` a do ní vloží obrázky [bg.jpg](../images/bg.jpg) a [suit.jpg](../images/suit.jpg) pro hlavičku stránky.
 1. Otevře soubor `style.css` a přidá do něj následující styl hlavičky těsně za třídu `.container`.
    ```css
    header {
@@ -41,7 +41,7 @@ Na konci tohoto úkolu mají Alice i Barbora každá na svém počítači naklon
 
 1. Poté, co Barbora provedla commit, Alice si pullne změny z GitHub repozítáře k sobě do počítače.
 1. Pomocí `git log` zkontroluje, že si opravdu stáhla Barbořin commit.
-1. V projektu vytvoří složku `fonts` a vloží do ní font [Fashion Victim](assets/fashion-victim.woff2). Na začátek souboru `style.css` tento font vloží pomocí `@font-face`.
+1. V projektu vytvoří složku `fonts` a vloží do ní font [Fashion Victim](../fashion-victim.woff2). Na začátek souboru `style.css` tento font vloží pomocí `@font-face`.
    ```css
    @font-face {
      font-family: 'Fashion Victim';
