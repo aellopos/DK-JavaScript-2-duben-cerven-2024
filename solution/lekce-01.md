@@ -60,7 +60,37 @@ Po zadání rodného čísla by se na stránce měly objevit čtyři výpisy.
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+```js
+const rodneCislo = prompt('Jaké je tvé rodné číslo?');
+let platne = true;
+
+if (rodneCislo.length === 10) {
+  document.body.innerHTML += '✔️ Zadané rodné číslo má správně deset znaků.<br>';
+} else {
+  document.body.innerHTML += '❌ Uživatel zadal rodné číslo neplatné délky.<br>';
+  platne = false;
+}
+
+if (Number.isInteger(Number(rodneCislo))) {
+  document.body.innerHTML += '✔️ Rodné číslo je celé číslo.<br>';
+} else {
+  document.body.innerHTML += '❌ Rodné číslo obsahuje nepovolené znaky.<br>';
+  platne = false;
+}
+
+if (Number(rodneCislo) % 11 === 0) {
+  document.body.innerHTML += '✔️ Rodné číslo je dělitelné 11.<br>';
+} else {
+  document.body.innerHTML += '❌ Rodné číslo není dělitelné číslem 11.<br>';
+  platne = false;
+}
+
+if (platne) {
+  document.body.innerHTML += '✔️ Zadané rodné číslo je platné.<br>';
+} else {
+  document.body.innerHTML += '❌ Uživatel zadal neplatné rodné číslo.<br>';
+}
+```
 
 </details>
 
@@ -90,7 +120,42 @@ const rodnaCislaKOtestovani = [
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+```js
+const checkBirthID = (rodneCislo) => {
+  if (rodneCislo.length !== 10) {
+    return 'invalidLength';
+  }
+
+  if (!Number.isInteger(Number(rodneCislo))) {
+    return 'notANumber';
+  }
+
+  if (Number(rodneCislo) % 11 !== 0) {
+    return 'failedChecksum';
+  }
+
+  return 'ok';
+};
+
+const rodnaCislaKOtestovani = [
+  '123',
+  'nepovím',
+  '7060201236',
+  '123456789123456789',
+  '9062185440',
+  '123č56q8y7',
+];
+
+rodnaCislaKOtestovani.forEach((rc) => {
+  document.body.innerHTML += `Rodné číslo <code>${rc}</code> `;
+  const vysledek = checkBirthID(rc);
+  if (vysledek === 'ok') {
+    document.body.innerHTML += 'je platné. ✔️<br>';
+  } else {
+    document.body.innerHTML += `není neplatné. Důvod: ${vysledek}. ❌<br>`;
+  }
+});
+```
 
 </details>
 
@@ -105,7 +170,60 @@ V případě, že uživatel zadal do rodného čísla špatné znaky, budeme cht
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+### `index.js`
+
+```js
+const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+const isDigit = (znak) => znak.length === 1 && digits.includes(znak);
+
+const logInvalidCharacters = (vstup) => {
+  Array.from(vstup).forEach((znak) => {
+    if (!isDigit(znak)) {
+      document.body.innerHTML += `Vstup obsahuje neplatný znak „${znak}“.<br>`;
+    }
+  });
+};
+
+const checkBirthID = (rodneCislo) => {
+  if (rodneCislo.length !== 10) {
+    return 'invalidLength';
+  }
+
+  if (!Number.isInteger(Number(rodneCislo))) {
+    return 'notANumber';
+  }
+
+  if (Number(rodneCislo) % 11 !== 0) {
+    return 'failedChecksum';
+  }
+
+  return 'ok';
+};
+
+const rodnaCislaKOtestovani = [
+  '123',
+  'nepovím',
+  '7060201236',
+  '123456789123456789',
+  '9062185440',
+  '123č56q8y7',
+];
+
+rodnaCislaKOtestovani.forEach((rc) => {
+  document.body.innerHTML + `Rodné číslo <code>${rc}</code> `;
+  const vysledek = checkBirthID(rc);
+  if (vysledek === 'ok') {
+    document.body.innerHTML += 'je platné. ✔️<br>';
+  } else {
+    document.body.innerHTML += `je neplatné. Důvod: ${vysledek}. ❌<br>`;
+
+    if (vysledek === 'notANumber') {
+      logInvalidCharacters(rc);
+    }
+  }
+});
+```
 
 </details>
 
@@ -167,7 +285,16 @@ Napište tedy funkci `validateCharacters`, která na vstupu dostane text a vrát
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+```js
+const validateCharacters = (vstup) => {
+  const result = [];
+  Array.from(vstup).forEach((znak) => {
+    result.push({ char: znak, digit: isDigit(znak) });
+  });
+  return result;
+};
+```
+
 
 </details>
 
@@ -197,7 +324,44 @@ Upravte vaši aplikaci na kontrolu rodných čísel tak, aby obsahovala formulá
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+### `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opakování JavaScriptu</title>
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <form id="formular">
+      <label>Rodné číslo: <input /></label>
+      <button>Zkontrolovat</button>
+    </form>
+    <div id="vystup"></div>
+  </body>
+</html>
+```
+
+### `index.js`
+
+```js
+// … zde jsou validační funkce z předchozích cvičení …
+
+const formular = document.querySelector('#formular');
+formular.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const vstup = formular.querySelector('input').value;
+  const vystupElm = document.querySelector('#vystup');
+  if (checkBirthID(vstup) === 'ok') {
+    vystupElm.textContent = '✔️ V pořádku.';
+  } else {
+    vystupElm.textContent = '❌ V rodném čísle jsou chyby.';
+  }
+});
+```
 
 </details>
 
@@ -224,6 +388,55 @@ Vaše aplikce by měla ve výsledku fungovat tak, že kdykoliv uživatel zadá r
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+### `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opakování JavaScriptu</title>
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <form id="formular">
+      <label>Rodné číslo: <input /></label>
+      <button>Zkontrolovat</button>
+    </form>
+    <div id="vystup"></div>
+    <div id="cifry"></div>
+  </body>
+</html>
+```
+
+### `index.js`
+
+```js
+const formular = document.querySelector('#formular');
+formular.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const vstup = formular.querySelector('input').value;
+  const vystupElm = document.querySelector('#vystup');
+  const vysledekValidace = checkBirthID(vstup);
+  if (vysledekValidace === 'ok') {
+    vystupElm.textContent = '✔️ V pořádku.';
+  } else {
+    vystupElm.textContent = '❌ V rodném čísle jsou chyby.';
+  }
+
+  const overeni = validateCharacters(vstup);
+  const cifry = document.querySelector('#cifry');
+
+  overeni.forEach((znak) => {
+    cifry.innerHTML += `
+      <span style="background-color: ${znak.digit ? '#00DD00' : '#FF8686'}">
+        ${znak.char}
+      </span>
+    `;
+  });
+});
+```
+
 
 </details>

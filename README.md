@@ -15,3 +15,4 @@
 |    | Datum     | Téma             | Prezentace                                                           | Příklady - lekce        | Domácí úkol
 | -- | --------- | ---------------- | -------------------------------------------------------------------- | ------------- | -------------
 | 01  | 17.04.2024 | Úvod | [materiály](https://kodim.cz/czechitas/js2/lekce/opakovani/rodna-cisla) | [zadání/řešení](./solution/lekce-01.md) | -
+| 02  | 24.04.2024 | Spolupráce | [materiály](https://kodim.cz/czechitas/js2/lekce/spoluprace/jedna-vetev) | [zadání/řešení](./solution/lekce-02.md) | -
