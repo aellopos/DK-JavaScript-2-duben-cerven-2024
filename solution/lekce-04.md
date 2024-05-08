@@ -73,7 +73,7 @@ Postupujte dle následujících kroků.
 1. Následujte stejný postup jako výše a vytvořte komponentu `Footer`, která bude představovat patičku stránky. Tato komponenta bude mít také jednu `prop` s názvem `author`, která udává jméno autora stránky.
 1. Do třetice vytvořte komponentu `Main`, která bude představovat hlavní obsah stránky. Tato komponenta bude mít opět jednu `prop` s názvem `content`, která bude udávat obsah odstavce.
 
-## Kalendářová data
+## Kalendářová data
 1. Založte si nový projekt:
    ```shell
    npm init kodim-app@latest datumy jsx
