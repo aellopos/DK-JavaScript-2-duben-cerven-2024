@@ -45,7 +45,7 @@ Postupujte dle následujících kroků.
      'Ctirad tráví svůj čas v blízkosti lednice a s očekáváním pozoruje její bílé dveře.';
    ```
 
-1. Adresy obrázků si můžeme zkopírovat z těchto odkazů: [elephant](assets/elephant.jpg), [mouse](assets/mouse.jpg).
+1. Adresy obrázků si můžeme zkopírovat z těchto odkazů: [elephant](../images/elephant.jpg), [mouse](../images/mouse.jpg).
 1. Karta s plyšákem by měla ve výsledné stránce vypadat takto.
    ```html
    <div class="plushy">
