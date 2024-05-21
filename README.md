@@ -11,7 +11,7 @@
 ## Podmínky pro splnění kurzu
 
 - aktivní účast na 9/12
-- splnění DÚ - 3 + uznaný závěrečný projekt
+- splnění minimálně 3 domácích úkolů + uznaný závěrečný projekt
 
 
 ## Lekce
