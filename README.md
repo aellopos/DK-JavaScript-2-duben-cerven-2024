@@ -4,6 +4,10 @@
 
 * Na každý úkol je 14 dní na vypracování. Termín je stanovený zejména proto, aby se úkoly k vypracování nehromadily ani pro ty, kdo je vypracovávájí, ani pro ty, kdo je opravují. Pokud nemůžete dodržet termín na odevzdání, dejte vědět někomu z týmu (např. vaší koučce / vašemu kouči).
 
+* Úkoly vypracovávejte v samostatných repozitářích na svém GitHubu a při odevzdávání vyplňte odkaz na daný repozitář. Pokud jste byly například v předchozích kurzech zvyklé aktivovat u svých repozitářů službu [GitHub Pages](https://pages.github.com), možná narazíte na to, že si to s Vite projekty nedokáže ve výchozím nastavení poradit.
+
+* Pro (dobrovolné) vystavení úkolů a projektů můžete postupovat podle [návodu](./solution/webhosting.md) a použít jeden z oblíbených cloudových hostingů.
+
 ## Podmínky pro splnění kurzu
 
 - aktivní účast na 9/12
