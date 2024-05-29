@@ -24,3 +24,4 @@
 | 04  | 08.05.2024 | Šablony a komponenty | [materiály](https://kodim.cz/czechitas/js2/lekce/sablony-komponenty/sablonovaci-systemy) | [zadání/řešení](./solution/lekce-04.md) | [zadání](./solution/DU-2.md) (do 26.5. 2024)
 | 05  | 15.05.2024 | Komunikace se serverem | [materiály](https://kodim.cz/czechitas/js2/lekce/server-komunikace/klient-server) | [zadání/řešení](./solution/lekce-05.md) | [zadání](./solution/DU-3.md) (do 29.5. 2024)
 | 06  | 22.05.2024 | Podmíněné zobrazení | [materiály](https://kodim.cz/czechitas/js2/lekce/podminene-zobrazeni/predavani-hodnot) | [zadání/řešení](./solution/lekce-06.md) | [zadání](./solution/DU-4.md) (do 2.6. 2024)
+| 07  | 29.05.2024 | Zobrazování seznamů | [materiály](https://kodim.cz/czechitas/js2/lekce/seznamy/opakovani-map) | [zadání/řešení](./solution/lekce-07.md) | [zadání](./solution/DU-5.md) (do 9.6. 2024)
