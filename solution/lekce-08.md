@@ -115,7 +115,7 @@ Naše aplikace _Nákupy_ ještě neumí mazat položky seznamu. Do aplikace při
    Tělo požadavku (`body`) bude prázdné, vůbec jej neuvádějte. Nezapomeňte použít při autentizace své jméno. Po odeslání požadavku zavolejte funkci `window.location.reload()`, pro obnovení stránky.
 1. Vyzkoušejte, že vaše aplikace funguje a že je možné pomocí tlačítka _Smazat_ smazat některou položku seznamu.
 
-## Odškrtnutí nákupu
+## Odškrtnutí nákupu
 
 Pokračujte v aplikaci z předchozího příkladu. Rozšíříme náš nákupní seznam ještě o tlačítko _Nakoupeno_, které umožní označit položku jako zakoupenou.
 
