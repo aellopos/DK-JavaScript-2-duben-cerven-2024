@@ -26,3 +26,4 @@
 | 06  | 22.05.2024 | Podmíněné zobrazení | [materiály](https://kodim.cz/czechitas/js2/lekce/podminene-zobrazeni/predavani-hodnot) | [zadání/řešení](./solution/lekce-06.md) | [zadání](./solution/DU-4.md) (do 2.6. 2024)
 | 07  | 29.05.2024 | Zobrazování seznamů | [materiály](https://kodim.cz/czechitas/js2/lekce/seznamy/opakovani-map) | [zadání/řešení](./solution/lekce-07.md) | [zadání](./solution/DU-5.md) (do 9.6. 2024)
 | 08  | 05.06.2024 | Posílání dat na server | [materiály](https://kodim.cz/czechitas/js2/lekce/posilani-dat/aktualizace) | [zadání/řešení](./solution/lekce-08.md) | -
+| 09  | 12.06.2024 | Vlastní API a URL parametry | [materiály](https://kodim.cz/czechitas/js2/lekce/api-parametry/search-parametry) | [zadání/řešení](./solution/lekce-09.md) | [zadání](./solution/DU-6.md) (do 23.6. 2024)
