@@ -28,3 +28,5 @@
 | 08  | 05.06.2024 | Posílání dat na server | [materiály](https://kodim.cz/czechitas/js2/lekce/posilani-dat/aktualizace) | [zadání/řešení](./solution/lekce-08.md) | -
 | 09  | 12.06.2024 | Vlastní API a URL parametry | [materiály](https://kodim.cz/czechitas/js2/lekce/api-parametry/search-parametry) | [zadání/řešení](./solution/lekce-09.md) | [zadání](./solution/DU-6.md) (do 23.6. 2024)
 | 10  | 19.06.2024 | CRUD operace | [materiály](https://kodim.cz/czechitas/js2/lekce/crud/cv-uvod) | [zadání/řešení](./solution/lekce-10.md) | -
+| 11  | 26.06.2024 | Závěrečný projekt - část 1 | - | [zadání/řešení](./solution/Zaverecny_projekt.md) | -
+| 12  | 3.07.2024 | Závěrečný projekt - část 2 | - | [zadání/řešení](./solution/Zaverecny_projekt.md) | -
