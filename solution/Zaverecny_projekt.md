@@ -1,6 +1,6 @@
 # Závěrečný projekt - Cafe Lora (první část)
 
-## 1
+## 1
 Projekt Café Lóra nebudeme dělat úplně na zelené louce. Budeme vycházet z již připraveného základu, V tomto cvičení se seznámíme s tím, co všechno je pro nás připraveno a jakým způsobem budeme pracovat.
 
 1. Základ celé stránky, kterou budete postupně tvořit najdete v repozitáři [cafelora](https://github.com/Czechitas-podklady-WEB/cafelora). Pomocí _Use this template_ si vytvořte kopii tohoto repozitáře na svém GitHubu a naklonujte si ji do svého počítače.
@@ -40,7 +40,7 @@ Jako první budeme chtít rozsekat hlavní stránku index.jsx na následující 
 
 1.  Vyzkoušejte, že máte hotovou stránku, která vypadá stejně jako stránka ze zadání s funkční navigací. Proveďte commit s hezky popisnou zprávou a pushněte do vzdáleného repozitáře.
 
-## 3
+## 3
 Jako další úkol rozchodíme zatím nefunkční navigaci a zařídíme, aby se na úzkých displejích navigace zobrazovala po kliknutí na hamburger ikonku.
 
 1. Nejdříve do těch komponent, které odpovídají odkazům v navigaci, přidejte attribut `id`. Atribut vložte přímo na `<section/>` uvnitř dané komponenty. Tím zajistíte, aby odkazy v navigaci po kliknutí přesunuly uživatele na správnou část stránky.
@@ -96,7 +96,7 @@ Abychom mohli vytvářet seznam ingrediencí podle dat, každá ingredience náp
 
 # Závěrečný projekt - Cafe Lora (druhá část)
 
-## 6
+## 6
 V tomto cvičení konečně zobrazíme celou nabídku nápojů, které si stáhneme z API.
 
 1. Nejdříve si naklonujte repozitář [cafelora-api](https://github.com/Czechitas-podklady-WEB/cafelora-api), kde najdete připravená data pro `apidroid`. Otevřete si repozitář v novém okně VS Code a spusťte `npx apidroid@latest` (pozor na přidanou část `@latest` – to zajistí, aby se použila nejnovější verze `apidroid`, která je pro API Café Lóra potřeba).
@@ -107,7 +107,7 @@ V tomto cvičení konečně zobrazíme celou nabídku nápojů, které si stáhn
 1. Ingredience zobrazíte za využití prop `layers` a komponenty `Layer`, která už také získá opravdová data.
 1. Stránka by nyní měla zobrazovat všechny nápoje s obrázky i ingrediencemi. Commitněte se srozumitelnou zprávou a pushněte do vzdáleného repozitáře.
 
-## 7
+## 7
 1.  Nejdříve si všimněte, že data pro jeden nápoj obsahují vlastnost `ordered`, která udává, zda je nápoj zrovna objednaný či nikoliv. Toto je zároveň _prop_ v komponentě `Drink`. Upravte tuto komponentu tak, aby v závislosti na hodnotě této _prop_ zobrazila na tlačíku text _Objednat_ nebo _Zrušit_.
 1.  Na objednávací tlačítko také přidejte třídu `.order-btn--ordered` v případě, že nápoj je objednaný.
 1.  Prop `id` předejte atributu `data-id`, který vložte na `<form>`.
